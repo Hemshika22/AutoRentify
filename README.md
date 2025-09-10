@@ -30,24 +30,8 @@ Backend: Node.js, Express.js, MongoDB, Mongoose
 Other: JWT Authentication, Axios, React Router
 
 📂 Project Structure
-AutoRentify/
-│── client/              # Frontend (React + Vite)
-│   ├── src/
-│   │   ├── assets/       # Icons, logos, images
-│   │   ├── components/   # Reusable components (Navbar, ReviewSection, etc.)
-│   │   ├── context/      # App context (auth, axios instance)
-│   │   ├── pages/        # Pages (Home, CarDetails, MyBookings, etc.)
-│   │   └── App.jsx
-│   └── package.json
-│
-│── server/              # Backend (Node.js + Express)
-│   ├── models/           # Mongoose models (User, Car, Booking, Review)
-│   ├── controllers/      # Business logic
-│   ├── routes/           # API routes
-│   ├── server.js         # Entry point
-│   └── package.json
-│
-└── README.md
+<img width="872" height="553" alt="image" src="https://github.com/user-attachments/assets/67c118f2-d4f6-48d1-8677-dfca94418f3f" />
+
 
 ⚙️ Installation & Setup
 1. Clone the repository
