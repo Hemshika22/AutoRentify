@@ -223,8 +223,11 @@ const getCarReviewStats = async (req, res) => {
   try {
     const { carId } = req.params;
 
+    // Convert string ID to ObjectId
+    const objectId = new mongoose.Types.ObjectId(carId);
+
     const stats = await Review.aggregate([
-      { $match: { car: mongoose.Types.ObjectId(carId) } },
+      { $match: { car: objectId } },
       {
         $group: {
           _id: null,

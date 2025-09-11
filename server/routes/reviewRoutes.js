@@ -8,16 +8,16 @@ import {
   deleteReview,
   getCarReviewStats
 } from '../controllers/reviewController.js';
-import auth from '../middleware/auth.js';
+import { protect } from '../middleware/auth.js';
 
 // Public routes
 router.get('/car/:carId', getCarReviews);
 router.get('/car/:carId/stats', getCarReviewStats);
 
 // Protected routes (require authentication)
-router.post('/create', auth, createReview);
-router.get('/user', auth, getUserReviews);
-router.put('/:reviewId', auth, updateReview);
-router.delete('/:reviewId', auth, deleteReview);
+router.post('/create', protect, createReview);
+router.get('/user', protect, getUserReviews);
+router.put('/:reviewId', protect, updateReview);
+router.delete('/:reviewId', protect, deleteReview);
 
 export default router;
